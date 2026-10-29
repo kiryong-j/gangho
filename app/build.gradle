@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.gangho.yurang'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.gangho.yurang'
+        minSdk 24
+        targetSdk 34
+        versionCode 104
+        versionName '1.0.4'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 테스트 배포용: 디버그 키로 서명 (플레이스토어 출시 때는 정식 키로 교체)
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
