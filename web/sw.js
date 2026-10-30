@@ -1,5 +1,5 @@
 /* 강호유랑 오프라인 실행용: 게임 파일은 인터넷이 되면 최신으로, 안 되면 저장해 둔 것으로 */
-const C = 'gangho-v1.1.0';
+const C = 'gangho-v1.1.1';
 const FONT = 'gangho-fonts';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
